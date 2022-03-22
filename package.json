@@ -3,16 +3,22 @@
     "version": "1.0.0",
     "description": "",
     "main": "app.js",
+    "bin": "app.js",
     "type": "module",
     "dependencies": {
+        "colors": "^1.4.0",
         "genius-lyrics-api": "^3.2.0",
         "node-fetch": "^2.6.6",
-        "colors": "^1.4.0"
+        "pkg": "^5.5.2",
+        "prompt-sync": "^4.2.0",
+        "prompt-sync-history": "^1.0.1"
     },
-    "devDependencies": {},
     "scripts": {
         "start": "node app.js"
     },
     "author": "Momir Stanišić",
-    "license": "ISC"
+    "license": "ISC",
+    "pkg": {
+        "options": ["experimental-modules"]
+    }
 }
